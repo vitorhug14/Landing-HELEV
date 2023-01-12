@@ -1,9 +1,9 @@
 :root {
     --branco-principal:  #FFFFFF;
     --dourado: #AB863B;
+    --letra-dourada: #D5BD67;
     --cor-de-fundo: #010101;
     --fonte-principal: 'Inter';
-    --botao-azul-efeito: #3C92FA;
     --cinza-secundario: #C0C0C0;
  }
 
@@ -20,14 +20,18 @@ body {
     padding: 0;
 }
 
-li{
+.carrossel {
+    width: 80%;
+    margin: 0 10em;
+}
+li {
     text-decoration: none;
     list-style-type: none;
     margin-right: 4em;
 }
 
 .container {
-    height: 100vh;
+    height: 80vh;
     display: grid;
     grid-template-columns: 50% 50%;
 }
@@ -49,7 +53,7 @@ li{
 }
 
 .secundario__imagem {
-    width: 80%;
+    width: 60%;
 }
 
 .rodape {
@@ -80,3 +84,43 @@ li{
     font-size: 14px;
     color: var(--cinza-secundario);
 }
+
+.container__botao {
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+    border-radius: 10px;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: flexbox;
+    text-decoration: none;
+    margin-bottom: 1em;
+    
+}
+
+.container__botao:hover {
+    background-color: var(--dourado);
+    color: var(--cor-de-fundo);
+}
+
+.centro {
+    text-align: center;
+    align-items: center;
+}
+
+.fundo__drop {
+    background-color: transparent;
+}
+
+.fundo__letra {
+    color: var(--dourado);
+}
+
+.fundo__letra:hover {
+    background-color: transparent;
+    color: white;
+}
+
+.letra {
+    color: var(--letra-dourada);
+}
+
